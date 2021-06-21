@@ -1,0 +1,23 @@
+import Package from "../Models/models/package";
+
+const transformIntoPackage = (payload) => {
+    const transformData = [];
+    const response = payload;
+    for (let id in response) {
+        transformData.push(
+            new Package(id, 
+                response[id].designerName, 
+                response[id].name, 
+                response[id].price, 
+                response[id].theme, 
+                response[id].menu, 
+                response[id].venu,
+                response[id].occuredDate,
+                response[id].noOfPeople
+            )
+        )
+    }
+    return transformData;
+}
+
+export default transformIntoPackage;

@@ -1,0 +1,161 @@
+.admin-navbar {
+  background-color: rgb(63, 60, 60) !important;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 0px !important;
+  border-radius: 0px !important;
+}
+
+.bdr{
+  border-left: 2px solid #c4c001;
+}
+
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.admin-nav-menu {
+  display: grid ;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 85vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.admin-nav-item {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.admin-nav-links {
+  color: white !important;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.admin-nav-links:hover {
+  color: #F14E95 !important;
+  transition: all 0.2s ease-out !important;
+}
+ul,ol { 
+  margin: 0px !important;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.admin-nav-links-mobile {
+  display: none;
+}
+
+.admin-menu-icon {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+    
+  }
+  .admin-navbar {
+    height: 11vh !important;
+    margin: 0px !important;
+    z-index: 1;
+  }
+  .admin-navbar-logo{
+    justify-self: start;
+    margin: -10px 0px 0px -10px !important;
+    padding: 0px !important;
+    cursor: pointer;
+  }
+  .admin-navbar-logo {
+    position: absolute;
+    top: 0;
+    right: 24px;
+    transform: translate(25%, 50%);
+  }
+  .admin-navbar-text{
+    justify-self: start;
+    margin: 19px 0px 0px -90px !important;
+    padding: 0px !important;
+    cursor: pointer;
+  }
+  .admin-navbar-text {
+    position: absolute;
+    top: 0;
+    /* right: 0; */
+    transform: translate(25%, 50%);
+  }
+  
+  .bdr{
+    border-left: none;
+    font-size: 20px !important;
+    font-weight: bold !important;
+  }
+  
+  .admin-nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 101%;
+    height: 87vh;
+    overflow-y: hidden;
+    position: absolute;
+    top: 72px;
+    left: -100% ;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  
+  .admin-nav-menu.active {
+    background: rgb(88, 86, 88) !important;
+    left: -0.5%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  
+  .admin-nav-links {
+    text-align: center;
+    padding: 2rem;
+    margin: 0px 25px 0px 0px !important; 
+    width: 100%;
+    display: table;
+    font-size: 18px !important;
+    font-weight: bold !important;
+  }
+  
+  .admin-nav-links:hover {
+    border-radius: 0;
+  }
+  
+  
+  .admin-menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 85% !important;
+    transform: translate(-100%, 60%) !important;
+    font-size: 2rem !important;
+    cursor: pointer;
+  }
+  
+  .fa-times {
+    color: #fff;
+    font-size: 2.2rem;
+  }
+  
+}
+
+@media screen and (max-width: 320px) {
+  .admin-navbar {
+    height: 13vh !important;
+  }
+}

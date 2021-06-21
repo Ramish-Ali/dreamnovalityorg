@@ -1,0 +1,159 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px !important;
+  z-index: 1 !important;
+}
+
+.bdr{
+  border-left: 2px solid #c4c001;
+}
+.nav-logo {
+  justify-self: start;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.nav-mn {
+  display: grid ;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 0em !important;
+  list-style: none;
+  text-align: center;
+  width: 85vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+
+.nav-lnks {
+  color: white !important;
+  text-decoration: none;
+}
+
+.nav-lnks:hover {
+  color: #b1a8ad !important;
+  transition: all 0.2s ease-out !important;
+}
+ul,ol { 
+  margin: 0px !important;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.nav-lnks-mobile {
+  display: none;
+}
+
+.mn-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+  .navbar {
+    margin: 0px !important;
+    
+  }
+
+  .navbar-logo{
+    justify-self: start;
+    margin-top: -30px !important;
+    cursor: pointer;
+  }
+  .bdr{
+    border-left: none;
+    font-size: 20px !important;
+    font-weight: bold !important;
+  }
+
+  .nav-mn {
+    display: flex;
+    flex-direction: column;
+    width: 101%;
+    height: 90vh;
+    position: absolute;
+    top: -25px;
+    right: -100% ;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-mn.active {
+    background: #f14495 !important;
+    right: 0 ;
+    opacity: 0.95;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-lnks {
+    text-align: center;
+    margin-top: 40px !important;
+    padding: 2.5rem !important;
+    width: 98%;
+    display: table;
+    font-size: 16px !important;
+    font-weight: bold !important;
+  }
+
+  .nav-lnks:hover {
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .mn-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-120%, 70%);
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+
+  .tms {
+    color: #fff;
+    z-index: 1 !important;
+    font-size: 2.8rem !important;
+  }
+
+  .nav-lnks-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #1888ff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .nav-lnks-mobile:hover {
+    background: #fff;
+    color: #1888ff;
+    transition: 250ms;
+  }
+}
